@@ -1,0 +1,33 @@
+
+body {
+    margin: 0px;
+    background-image:url('https://images.alphacoders.com/163/163821.jpg');
+    background-attachment: fixed;  
+    background-size: cover;
+    color: #fff;
+}
+.hoe2{
+    height: 100%;
+    margin-bottom:30px;
+    text-align: center;
+    
+}
+
+.shin-secao1{
+    margin-bottom: 0px;
+    height: 800px;
+    padding: 300px;
+    vertical-align: middle;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.shin-secao-base{
+    margin: 0px;
+    padding: 20px;
+    background-color: rgba(0,0,0,0.9);
+}
+
+.shin-secao-descricao{
+    
+}
+
