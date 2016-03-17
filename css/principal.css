@@ -27,7 +27,8 @@ body {
     background-color: rgba(0,0,0,0.9);
 }
 
-.shin-secao-descricao{
-    
+.nav-center {  
+  display: flex;
+    justify-content: center;
 }
 
