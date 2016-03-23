@@ -1,4 +1,6 @@
-
+input {
+    color: #333;
+}
 body {
     margin: 0px;
     background-image:url('https://images.alphacoders.com/163/163821.jpg');
