@@ -1,6 +1,13 @@
-input {
-    color: #333;
+input, textarea {
+    color: #fff;
+    -webkit-border-radius:5px;
+  -moz-border-radius:5px;
+  -o-border-radius:5px;
+  -ms-border-radius:5px;
+  border-radius:5px;
 }
+
+
 body {
     margin: 0px;
     background-image:url('https://images.alphacoders.com/163/163821.jpg');
@@ -8,11 +15,16 @@ body {
     background-size: cover;
     color: #fff;
 }
+
+h3{
+  text-align: justify;  
+}
+
+
 .hoe2{
     height: 100%;
     margin-bottom:30px;
-    text-align: center;
-    
+    text-align: center;   
 }
 
 .shin-secao1{
@@ -29,8 +41,33 @@ body {
     background-color: rgba(0,0,0,0.9);
 }
 
+.shin-caixa{
+    text-align: justify;
+}
+
+.shin-h3{
+    text-align: justify;
+    padding: 0px 200px;
+}
+
+.shin-testmonial{
+    width: 100%;
+    height: 100px;
+}
+
 .nav-center {  
   display: flex;
     justify-content: center;
 }
 
+.shin-imagem-circle{
+    -webkit-border-radius:150px;
+  -moz-border-radius:150px;
+  -o-border-radius:150px;
+  -ms-border-radius:150px;
+  border-radius:150px;
+}
+
+.shin-image-carolsel{
+     margin: auto;
+}
