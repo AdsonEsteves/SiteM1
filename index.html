@@ -21,25 +21,15 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Bootstrap theme</a>
+          <a class="navbar-brand" href="#">Adson Esteves</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li role="separator" class="divider"></li>
-                <li class="dropdown-header">Nav header</li>
-                <li><a href="#">Separated link</a></li>
-                <li><a href="#">One more separated link</a></li>
-              </ul>
-            </li>
+            <li><a href="#EU">Quem sou</a></li>
+              <li><a href="#Trabalhos">Trabalhos</a></li>
+              <li><a href="#Competencias">Competências</a></li>
+              <li><a href="#Depoimentos">Depoimentos</a></li>
+            <li><a href="#Contato">Contato</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -53,7 +43,19 @@
         <p>Shinjikun</p>
       </div>
         
-         <div class="col-md-12 col-xs-12 shin-secao-base">
+        <div class="col-md-12 col-xs-12 shin-secao-base" id="EU">
+        <h1>Quem sou</h1>
+          <div class="well shin-texto2">
+              <img src="https://scontent.fudi1-1.fna.fbcdn.net/hphotos-xpa1/v/t1.0-9/11138163_537430916397469_6262916069081125972_n.jpg?oh=c3c99b67d88b63418058cad57eeee962&oe=577F3C86" alt="" class="img-circle" />
+        <p>
+            Meu nome é Adson Marques da Silva Esteves, sou programador, e estudante de ciencias da computação, atualmente no 5º período. Trabalho no laboratório LITE(Laboratório de Inovação Tecnologia da Educação), trabalhando no desenvolvimento da IDE de aprendizado Portugol Studio. Tenho 20 anos, moro em Itajaí e gosto de Animes e Jogos.
+            Uso Pseudônimo de Shinjikun em certos lugares.
+            
+        </p>
+        </div> 
+      </div> 
+        
+         <div class="col-md-12 col-xs-12 shin-secao-base" id="Trabalhos">
         <h1>Trabalhos</h1>
       <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
@@ -61,15 +63,24 @@
           <li data-target="#carousel-example-generic" data-slide-to="1"></li>
           <li data-target="#carousel-example-generic" data-slide-to="2"></li>
         </ol>
-        <div class="carousel-inner" role="listbox">
+        <div class="carousel-inner shin-image_carousel" role="listbox">
           <div class="item active">
-            <img src="OPKCalcprint.png" alt="First slide" class="shin-image-carolsel">
+              <a target="_blank" href="https://github.com/BeholderDEV/OPKCalculator">
+            <img src="OPKCalcprint.png" alt="First slide" class="shin-image-carousel">
+            </a>
+              <p>OPK Calculator</p>
           </div>
           <div class="item">
-            <img src="OPKpfprint.png" alt="Second slide" class="shin-image-carolsel">
+              <a target="_blank" href="https://github.com/BeholderDEV/OPKPhotoFilter">
+            <img src="OPKpfprint.png" alt="Second slide" class="shin-image-carousel">
+              </a>
+              <p>OPK PhotoPhilter</p>
           </div>
           <div class="item">
-            <img src="Portugolprint.png" alt="Third slide" class="shin-image-carolsel">
+              <a target="_blank" href="https://github.com/UNIVALI-LITE/Portugol-Studio">
+            <img src="Portugolprint.png" alt="Third slide" class="shin-image-carousel">
+              </a>
+              <p>Portugol Studio</p>
           </div>
         </div>
         <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
@@ -83,57 +94,66 @@
       </div>
 </div>
 
-      <div class="col-md-12 col-xs-12 shin-secao-base" ng-controller = "DescriptController as descrito">
-        <h1>Competencias</h1>
-          
-          <section class="tab" ng-controller="TabController as tab">
-                <ul class="nav nav-pills nav-center">
+      <div class="col-md-12 col-xs-12 shin-secao-base" ng-controller = "DescriptController as descrito" id="Competencias">
+          <section class="col-md-12 col-xs-12 tab" ng-controller="TabController as tab">
+              <h1>Competências</h1>
+                <ul class="nav nav-pills">
                   <li ng-class="{ active: tab.isSet(1) }">
                     <a href ng-click="tab.setTab(1)">
+                        <img src="img/cplusplus.png">
                         C++
                       </a>
                     </li>
                   <li ng-class="{ active: tab.isSet(2) }">
                     <a href ng-click="tab.setTab(2)">
+                        <img src="img/java.png">
                         JAVA
                       </a>
                     </li>
                   <li ng-class="{ active: tab.isSet(3) }">
                     <a href ng-click="tab.setTab(3)">
+                        <img src="img/php.png">
                         PHP
                       </a>
                     </li>
                   <li ng-class="{ active: tab.isSet(4) }">
                     <a href ng-click="tab.setTab(4)">
+                        <img src="img/lua.png">
                         LUA
                         </a>
                     </li>
                   <li ng-class="{ active: tab.isSet(5) }">
                     <a href ng-click="tab.setTab(5)">
+                        <img src="img/golang.png">
                         GO
                       </a>
                     </li>
                   <li ng-class="{ active: tab.isSet(6) }">
                     <a href ng-click="tab.setTab(6)">
+                        <img src="img/javascript.png">
                         Javascript
                       </a>
                     </li>
                   <li ng-class="{ active: tab.isSet(7) }">
                     <a href ng-click="tab.setTab(7)">
+                        <img src="img/htmlcss.png">
                         HTML/CSS
                         </a>
                     </li>
                   <li ng-class="{ active: tab.isSet(8) }">
                     <a href ng-click="tab.setTab(8)">
+                        <img src="img/corel.png">
                         Corel
                       </a>
                     </li>
                   <li ng-class="{ active: tab.isSet(9) }">
                     <a href ng-click="tab.setTab(9)">
+                        <img src="img/photoshop.png">
                         Photoshop
                       </a>
                     </li>  
                 </ul>
+              <div class="col-md-12 col-xs-12 well shin-texto">
                 <div ng-show="tab.isSet(1)">
                   {{descrito.texto.C}}
                 </div>
@@ -161,42 +181,37 @@
                 <div ng-show="tab.isSet(9)">
                    {{descrito.texto.Photoshop}}
                 </div>
+            </div>
       </section>
       </div>
 
       
 
-    <div class="col-md-12 col-xs-12 shin-secao-base">
+    <div class="col-md-12 col-xs-12 shin-secao-base" id="Depoimentos">
         <h1>Depoimentos</h1>
-      
-    <div id="block" class="col-md-6 col-xs-12">
-		<h3>Featured testimonial</h3>
+      <div class="shin-center">
+    <div id="block" class="col-md-6 col-xs-12 shin-comentarios">
+		<h3></h3>
 		<div class="photo">
-			<img src="img/photo.gif" alt="" class="shin-imagem-circle" />
+			<img src="img/photo.gif" alt="" class="img-circle" />
 		</div>
-		<p class="content"><span class="laquo">&nbsp;</span>Lorem ipsum dolor sit amet, sanctus corrumpit ei quo, eu quo meis brute, sed ut possit vocibus graecis. Dicant mandamus ne duo, mazim aperiam ei eos.<span class="raquo">&nbsp;</span></p>
+		<p class="content"><span class="laquo">&nbsp;</span>FIRST!<span class="raquo">&nbsp;</span></p>
 		<div class="sign">
-			<a href="#">Jay Hafling</a>
-			<p>Freelance web-designer</p>
+			<a href="#">Non Non</a>
 		</div>
 	</div>
         
-    <div id="block" class="col-md-6 col-xs-12">
-		<h3>Featured testimonial</h3>
+    <div id="block" class="col-md-6 col-xs-12 shin-comentarios">
+		<h3></h3>
 		<div class="photo">
-			<img src="img/photo.gif" alt="" class="shin-imagem-circle" />
+			<img src="img/photo2.gif" alt="" class="img-circle" />
 		</div>
-		<p class="content"><span class="laquo">&nbsp;</span>Lorem ipsum dolor sit amet, sanctus corrumpit ei quo, eu quo meis brute, sed ut possit vocibus graecis. Dicant mandamus ne duo, mazim aperiam ei eos.<span class="raquo">&nbsp;</span></p>
+		<p class="content"><span class="laquo">&nbsp;</span>Nossa cara, que lindo.<span class="raquo">&nbsp;</span></p>
 		<div class="sign">
-			<a href="#">Jay Hafling</a>
-			<p>Freelance web-designer</p>
+			<a href="#">Amanda</a>
 		</div>        
 	</div>
-        
-    </div>
-      
-      <div class="col-md-12 col-xs-12 shin-secao-base">
-        <h1>Fomulário</h1>
+    </div>      
       <div>
         <form name="input" class="col-md-12 col-xs-12" action="depoimento.txt" method="get">
             
@@ -212,7 +227,7 @@
             
             <div class="form-group col-xs-12 col-md-12 shin-h3">
                 <h3>Depoimento: </h3>
-                <textarea class = "shin-testmonial" placeholder="Deixe sua opnião"></textarea>
+                <textarea class = "shin-testmonial" placeholder="Deixe seu depoimento"></textarea>
                 <div>
                 <input type="submit" value="Enviar">
                 </div>
@@ -220,13 +235,31 @@
             
           </form>
       </div>
-    </div>    
+        </div>  
       
 
-      <div class="col-md-12 col-xs-12 shin-secao-base">
+      <div class="col-md-12 col-xs-12 shin-secao-base" id="Contato">
         <h1>Contato</h1>
-      <form name="input" class="col-md-12 col-xs-12" action="depoimento.txt" method="get">
-            
+          <a target="_blank" href="https://www.facebook.com/adson.esteves">
+              <img src="img/face.png" alt="" class="img-circle"/>
+          </a>
+          <a target="_blank" href="https://plus.google.com/u/0/+AdsonEstevesShinji">
+              <img target="_blank" src="img/google.png" alt="" class="img-circle"/>
+          </a>
+          <a target="_blank" href="https://github.com/AdsonEsteves">
+              <img target="_blank" src="img/github.gif" alt="" class="img-circle"/>
+          </a>
+        <div class="well shin-texto2">
+        <p>
+            Nome: Adson Marques da Silva Esteves
+        </p>
+            <p>E-MAIL: shinadson@gmail.com</p>
+            <p>Telefone: 3046-0688</p> 
+            <p>Tempo Médio de Resposta: 1 semana</p>
+        
+        </div> 
+      <form name="input" class="col-md-12 col-xs-12">
+            <h3>Me mande uma mensagem</h3>
             <div class="form-group col-xs-12 col-md-6 shin-h3">
                 <h3>Nome:</h3>
                 <input class= "shin-caixa" type="text" name="name">
@@ -239,11 +272,11 @@
             
             <div class="form-group col-xs-12 col-md-12 shin-h3">
                 <h3>Mensagem: </h3>
-                <textarea class = "shin-testmonial" placeholder="Deixe sua opnião"></textarea>
+                <textarea class = "shin-testmonial" placeholder="Mande sua mensagem"></textarea>
                 <div>
                 <input type="submit" value="Enviar">
                 </div>
-            </div>           
+            </div>         
             
           </form>
     </div>

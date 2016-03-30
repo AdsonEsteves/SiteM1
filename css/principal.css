@@ -1,5 +1,7 @@
 input, textarea {
     color: #fff;
+    background-color: rgba(0,0,0,0.4);
+    border: 1px solid gray;
     -webkit-border-radius:5px;
   -moz-border-radius:5px;
   -o-border-radius:5px;
@@ -16,11 +18,6 @@ body {
     color: #fff;
 }
 
-h3{
-  text-align: justify;  
-}
-
-
 .hoe2{
     height: 100%;
     margin-bottom:30px;
@@ -30,14 +27,15 @@ h3{
 .shin-secao1{
     margin-bottom: 0px;
     height: 800px;
-    padding: 300px;
+    padding: 300px 0 0 0;
     vertical-align: middle;
     background-color: rgba(0,0,0,0.4);
 }
 
 .shin-secao-base{
     margin: 0px;
-    padding: 20px;
+    padding: 50px 100px 300px 100px;
+    vertical-align: middle;
     background-color: rgba(0,0,0,0.9);
 }
 
@@ -45,14 +43,25 @@ h3{
     text-align: justify;
 }
 
+.shin-texto{
+    padding:  0 35% 0 35%;
+}
+.shin-texto2{
+    padding:  0 20% 0 20%;
+}
 .shin-h3{
     text-align: justify;
-    padding: 0px 200px;
+    padding: 0px 100px;
 }
 
 .shin-testmonial{
     width: 100%;
     height: 100px;
+    vertical-align: middle;
+}
+
+.shin-center{
+    padding:  0 0 0 10%;
 }
 
 .nav-center {  
@@ -65,9 +74,39 @@ h3{
   -moz-border-radius:150px;
   -o-border-radius:150px;
   -ms-border-radius:150px;
-  border-radius:150px;
+  border-radius:50%;
 }
 
-.shin-image-carolsel{
+.shin-image-carousel{
      margin: auto;
+    max-height: 400px !important;
+    height: 50%;
+}
+
+.shin-comentarios{
+    text-align: justify;
+}
+
+.img-circle{
+    width: 100px;
+    height: 100px;
+}
+
+.nav-tabs > li, .nav-pills > li {
+    float:none;
+    display:inline-block;
+    *display:inline; /* ie7 fix */
+     zoom:1; /* hasLayout ie7 trigger */
+}
+
+.nav-tabs, .nav-pills {
+    padding: 30px 0px 80px 0px;
+    text-align:center;
+}
+
+.well{
+    background-color: rgba(0,0,0,0.4);
+}
+.fa-lg{
+    font-size: 50px;
 }

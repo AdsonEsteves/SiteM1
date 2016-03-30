@@ -10,14 +10,4 @@ $(document).ready(function(){
     $("#descricao").hide();     
 });
 
-var data={
-    "nomes" : [ 
-    {
-        "nome": dsfsf,
-        "sadads": dasds
-    },
-    {
-        "nome": dsfsf,
-        "sadads": dasds
-    }]
-};
+
